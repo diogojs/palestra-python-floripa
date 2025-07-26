@@ -1,0 +1,12 @@
+name: my-project
+channels:
+  - defaults
+dependencies:
+  - python
+  - nomkl
+  - numpy
+  - pandas
+  - flask
+  - requests
+  - pytest
+

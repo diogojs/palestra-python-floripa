@@ -1,0 +1,22 @@
+[project]
+name = "new-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "flask>=3.1.1",
+    "mylib",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.17.0",
+    "pytest>=8.4.1",
+]
+
+[tool.uv.sources]
+mylib = { path = "../mylib", editable = true }
+
+[project.scripts]
+newapp = "main:main"
